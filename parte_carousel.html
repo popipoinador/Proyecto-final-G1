@@ -11,29 +11,70 @@
 
 
 <style>
+
+	.carousel-control {
+		width: 7%;		
+	}
+	
+	.carousel-caption {
+		
+	}
+
+	.titulo-carousel {
+
+		/*Animacion que todavia no andaaaaaaafmasjfnasldjfnalsfd*/
+		animation-name: Home-carouselSlideRightFadeIn;
+		transform: translateX(0);
+		animation-duration: 500ms;
+		animation-fill-mode: backwards;
+		animation-timing-function: ease-out;
+
+		/*Titulo configuracion*/
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		backface-visibility: hidden;
+		font-size: 47px;
+		animation-delay: 700ms;
+		font-family: : "Blizzard", Helvetica, Arial, sans-serif;
+		text-shadow: 4px 6.93px 17px rgba(0,0,0,.30);
+		left: 7%;
+		padding-bottom: 50px;
+	}
+
+
+
+
 	.carousel-indicators li {
     display: inline-block;
-    width: 150px;
-    height: 5px;
-    margin: 10px;
+    width: 130px;
+    height: 7px;
+    margin: 7px;
     text-indent: 0;
     cursor: pointer;
     border: none;
     border-radius: 0px;
     background-color: #0e86ca;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+
 }
 	.carousel-indicators .active {
-    width: 150px;
-    height: 5px;
-    margin: 10px;
+    width: 130px;
+    height: 7px;
+    margin: 7px;
     background-color: #00ff00;
     transition: background-color 250ms;
 }
 
+	/*.carousel-caption h1{
+
+	}*/
+
 		#carousel-id {
 			
-			height: 410px; 
+			height: 450px; 
+
 			
 
 		}
@@ -41,7 +82,37 @@
 		.btn-lg {
 			border-radius: 0px;
 
+
 		}
+		/* Configuracion de las imagenes*/
+
+		.item{
+	width: 100%;
+	height: 450px;
+	background-repeat: no-repeat;
+   
+}
+#carrefur1{
+	background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg");
+	background-position: 50% 20%;
+	background-size: 170% 170%;
+}
+#carrefur2{
+	background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg");
+	 background-position: 70% 25%;
+	background-size: 150% 150%;
+}
+#carrefur3{
+	background-image: url("https://cdn.mos.cms.futurecdn.net/wNsGQb6WED35mfBUnV9qwm.jpg");
+	background-position: 55% 15%;
+	background-size: 120% 180%;
+}
+
+#carrefur4{
+	background-image: url("https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759");
+		 background-position: 50% 25%;
+	background-size: 100% 150%;
+}
 
 
 
@@ -178,6 +249,9 @@
 		</div>
 	</nav>
 
+
+
+
 												<!-- Carousel -->
 
 	<div id="carousel-id" class="carousel slide" data-ride="carousel">
@@ -188,41 +262,38 @@
 			<li data-target="#carousel-id" data-slide-to="3" class=""></li>
 		</ol>
 		<div class="carousel-inner">
-			<div class="item active">
-				<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg">
+			<div id="carrefur1" class="item active">
+				
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Foto 1</h1>
+						<h1 class="titulo-carousel">Que empiece <br> la caza</h1>
+						
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="carrefur2" class="item">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="titulo-carousel">Foto 2</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis debitis velit id libero provident a nostrum nesciunt nam odit voluptas quam ea cum, aperiam sint tempora ullam expedita alias.</p>
 						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
 					</div>
 				</div>
 			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg">
+			<div id="carrefur3" class="item">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Foto 2</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis debitis velit id libero provident a nostrum nesciunt nam odit voluptas quam ea cum, aperiam sint tempora ullam expedita alias.</p>
-						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="https://forums.warframe.com/applications/core/interface/imageproxy/imageproxy.php?img=https://i.imgur.com/pMAZ2A5.jpg&key=a48e6b39653eb22efbb321944c066b832096d2733b777b2c6621d93eeb21bc8e">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Foto 3</h1>
+						<h1 class="titulo-carousel">Foto 3</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus laboriosam recusandae illum, aperiam, nesciunt aliquid debitis dignissimos iure quaerat porro, voluptate, distinctio quasi voluptatibus nostrum error fuga. Perferendis, laborum.</p>
 						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
 					</div>
 				</div>
 			</div>
-			<div class="item">
-				<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759">
+			<div id="carrefur4" class="item">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Foto 4</h1>
+						<h1 class="titulo-carousel">Foto 4</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa veritatis necessitatibus corporis obcaecati alias, laborum atque impedit. Debitis quo odio beatae nihil distinctio saepe architecto neque culpa, obcaecati odit!</p>
 						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
 					</div>

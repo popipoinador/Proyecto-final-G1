@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+<style>
+
+body{
+
+	background-color: rgb(20,20,30);
+}
+
+
+
+/******************************************************************************************inicio carrefur***********************************************************************/
+	.carousel-control {
+		width: 7%;		
+	}
+	
+	.carousel-caption {
+		
+	}
+
+	.titulo-carousel {
+
+		/*Animacion que todavia no andaaaaaaafmasjfnasldjfnalsfd*/
+		animation-name: Home-carouselSlideRightFadeIn;
+		transform: translateX(0);
+		animation-duration: 500ms;
+		animation-fill-mode: backwards;
+		animation-timing-function: ease-out;
+
+		/*Titulo configuracion*/
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		backface-visibility: hidden;
+		font-size: 47px;
+		animation-delay: 700ms;
+		font-family: : "Blizzard", Helvetica, Arial, sans-serif;
+		text-shadow: 4px 6.93px 17px rgba(0,0,0,.30);
+		left: 7%;
+		padding-bottom: 50px;
+	}
+
+
+
+
+	.carousel-indicators li {
+    display: inline-block;
+    width: 130px;
+    height: 7px;
+    margin: 7px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    background-color: #0e86ca;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+
+	}
+	.carousel-indicators .active {
+    width: 130px;
+    height: 7px;
+    margin: 7px;
+    background-color: #00ff00;
+    transition: background-color 250ms;
+	}
+
+	/*.carousel-caption h1{
+
+	}*/
+
+	#carousel-id {
+			
+		height: 600px; 
+
+			
+
+	}
+		
+	.btn-lg {
+		border-radius: 0px;
+
+
+	}
+		/* Configuracion de las imagenes*/
+
+	.item{
+	width: 100%;
+	height: 600px;
+	background-repeat: no-repeat;
+   
+	}
+	#carrefur1{
+		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg");
+		background-position: 50% 20%;
+		background-size: 170% 170%;
+	}
+	#carrefur2{
+		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg");
+		 background-position: 70% 25%;
+		background-size: 150% 150%;
+	}
+	#carrefur3{
+		background-image: url("https://cdn.mos.cms.futurecdn.net/wNsGQb6WED35mfBUnV9qwm.jpg");
+		background-position: 55% 15%;
+		background-size: 120% 180%;
+	}
+
+	#carrefur4{
+		background-image: url("https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759");
+			 background-position: 50% 25%;
+		background-size: 100% 150%;
+	}
+
+/*******************************************************************************************fin carrefur**************************************************************************/
+
+/******************************************************************************************** Navbar*******************************************************************************/
+
+	.navbar-default{
+		z-index: 2;
+		position: absolute;
+		width: 100%;
+		border-radius: 0px;
+						
+		}
+	.navbar-default {
+		background-color: rgba(50,50,50,0.5);
+		border-color: rgba(50,50,50,0.3);
+	}
+	.navbar-default .navbar-brand {
+	  color: #a0a0a0;
+	}
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
+	  color: #e0e0e0;
+	}
+	.navbar-default .navbar-text {
+	  color: #a0a0a0;
+	}
+	.navbar-default .navbar-nav > li > a {
+	  color: #c0c0c0;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+	  color: #e0e0e0;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+	  color: #e0e0e0;
+	  background-color: #c6c5c7;
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+	  color: #79787a;
+	  background-color: #c6c5c7;
+	}
+	.navbar-default .navbar-toggle {
+	  border-color: #c6c5c7;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	  background-color: #c6c5c7;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #343434;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+	  border-color: #343434;
+	}
+	.navbar-default .navbar-link {
+	  color: #343434;
+	}
+	.navbar-default .navbar-link:hover {
+	  color: #79787a;
+	}
+
+	@media (max-width: 767px) {
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #343434;
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	    color: #79787a;
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	    color: #79787a;
+	    background-color: #c6c5c7;
+	  }
+	}
+
+/******************************************************************************* fin menu principal**************************************************/
+/*********************************************************************************   BODY  *******************************************************************/
+</style>
+
+
+</head>
+<body>
+<!--*************************************************************      NAVBAR     ************************************************** -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Title</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="#"><font size="4" >JUEGOS</font></a></li>
+					<li><a href="#"><font size="4" >TIENDA</font></a></li>
+					<li><a href="#"><font size="4" >NOTICIAS</font></a></li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+<!-- ***********************************************************    FIN NABVAR    *************************************************** -->
+
+
+
+<!--*************************************************************    CARREFUR    ******************************************************** -->
+
+	<div id="carousel-id" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+			<li data-target="#carousel-id" data-slide-to="2" class=""></li>
+			<li data-target="#carousel-id" data-slide-to="3" class=""></li>
+		</ol>
+		<div class="carousel-inner">
+			<div id="carrefur1" class="item active">
+				
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="titulo-carousel">Que empiece <br> la caza</h1>
+						
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="carrefur2" class="item">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="titulo-carousel">Foto 2</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis debitis velit id libero provident a nostrum nesciunt nam odit voluptas quam ea cum, aperiam sint tempora ullam expedita alias.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="carrefur3" class="item">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="titulo-carousel">Foto 3</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus laboriosam recusandae illum, aperiam, nesciunt aliquid debitis dignissimos iure quaerat porro, voluptate, distinctio quasi voluptatibus nostrum error fuga. Perferendis, laborum.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="carrefur4" class="item">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1 class="titulo-carousel">Foto 4</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa veritatis necessitatibus corporis obcaecati alias, laborum atque impedit. Debitis quo odio beatae nihil distinctio saepe architecto neque culpa, obcaecati odit!</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Mas información</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+													 <!-- Fin Carousel -->
+
+		<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+<!--************************************************************   FIN CARREFUR   ****************************************************** -->
+
+
+<!--************************************************************     CUERPO       ************************************************************* -->
+
+
+	<div style="margin-top: 150px" class="container">
+	<div class="row">
+		<div  style="margin-top: 20px" class=" col-sm-2">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<ul>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						<br>
+						<li>Genero</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	<div class="col-sm-1"></div>
+	<div class=" col-sm-8">
+			<div class="row">
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+
+
+			</div>
+			<div class="row">
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+				<div class="col-sm-4"><img class="img-responsive" src="imagen/Koala.jpg" alt=""></div>
+				
+
+			</div>
+
+
+	</div>
+	<div class="col-sm-2"></div>
+	</div>
+
+	<div style="margin-top: 75px" class="row">
+
+	<div class="col-sm-9">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							Juego Random
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-1" ></div>
+
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+				
+				<br>
+				<li>Ranking</li>
+				<br>
+				<li>Ranking</li>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<!-- ***********************************************************	FIN CUERPO	****************************************************** -->
+
+<!-- ***********************************************************	FOOTER	    *********************************************************-->
+
+	<div id="footer">
+		<div class="container">
+			<hr class="hidden-xs">
+			<div class="row hidden-xs">
+				<div class="active">
+					<div class="inner">
+						
+					</div>
+
+					<div class="row"></div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-3">
+
+						<h3><strong><a>REDES</a></strong></h3>
+						<div class="connect">
+
+						  <p style="float: left;"><a class="fshare " href="https://www.instagram.com/thevalvestore/"><img class="h-img" src="https://vsimgs3.forfansbyfans.com/image/cache/data/icon-ins-2-32x32.png"></a></p>
+						  <p><a class="fshare " href="https://www.facebook.com/TheValveStore/"><img class="h-img" src="https://vsimgs3.forfansbyfans.com/image/cache/data/icon-fb-2-32x32.png"></a></p> 
+						  
+						  <p style="float: left;"><a class="fshare " href="https://twitter.com/thevalvestore"><img class="h-img" src="https://vsimgs3.forfansbyfans.com/image/cache/data/icon-tw-2-32x32.png"></a></p>
+						  <p><a class="fshare " href="https://www.youtube.com/user/Valve"><img class="h-img" src="https://vsimgs3.forfansbyfans.com/image/cache/data/icon-ytb-2-32x32.png"></a></p>
+
+						</div>
+
+					</div>
+					<div class="col-sm-4">
+						<h3><strong><a>PATROCINADORES</a></strong></h3>
+						 <a href="http://www.valve.karmaya.com.br/">DON SATUR</a>
+						<br><a href="https://goodgame.kz/">MAROLIO</a>
+						<br><a href="https://www.eclubstore.com/?cur=catalog/list&amp;id=2&amp;title=Merchandise">MANAOS</a>
+						<br><a href="http://www.thinkgeek.com/interests/dota-2/">KINDER SORPRESA</a>
+					</div>
+
+
+
+
+				</div>
+				<div class="col-sm-3">
+					<h3><strong><a>SOPORTE</a></strong></h3>
+					<a href="https://valvestore.forfansbyfans.com/faq">FAQ</a>
+					<a href="https://valvestore.forfansbyfans.com/contact-us">CONTACTANOS</a>
+				 </div>
+			</div>
+		</div>
+
+	</div>
+	<div style="height: 100px"></div>
+<!-- ***********************************************************	FON FOOTER	 *********************************************************-->
+
+
+
+
+
+
+
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -14,9 +14,20 @@
 
 body{
 
-	background-image:linear-gradient(to bottom right,#405050,#202530);
+	background-image:linear-gradient(to bottom right,#fff,#aaa);
 }
-
+a{
+	color:#555;
+}
+.oscuro a{
+	color:#aaa;
+}
+.shadow{
+box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;	
+}
+#titulo h2{
+	
+}
 
 
 /***************************************************************  INICIO CARREFUR  ************************************************************/
@@ -160,26 +171,26 @@ body{
 		border-color: rgba(50,50,50,0.3);
 	}
 	.navbar-default .navbar-brand {
-	  color: #66d2ff;
+	  color: #aaa;
 	}
 	.navbar-default .navbar-brand:hover,
 	.navbar-default .navbar-brand:focus {
-	  color: #99eeff;
+	  color: #fff;
 	}
 	.navbar-default .navbar-text {
-	  color: #66d2ff;
+	  color: #aaa;
 	}
 	.navbar-default .navbar-nav > li > a {
-	  color: #66d2ff;
+	  color: #aaa;
 	}
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus {
-	  color: #99eeff;
+	  color: #fff;
 	}
 	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus {
-	  color: #99eeff;
+	  color: #9fff;
 	  background-color: #c6c5c7;
 	}
 	.navbar-default .navbar-nav > .open > a,
@@ -228,6 +239,10 @@ body{
 
 /*************************************************************** FIN MENU PRINCIPAL **********************************************************/
 /***************************************************************      BODY        ************************************************************/
+	.panel{
+		border-radius: 0px;
+	}
+
 	#carousel-body{
 
 	}
@@ -251,7 +266,13 @@ body{
 	#titulo h2{
 		margin-bottom: 0px;
 		margin-top:10px;
-		color:#f0f0f0;
+		color:#555;	
+	}
+	#columna-genero{
+		width: 20%;
+	}
+	#panel-genero{
+		margin-top: 20px;
 	}
 
 
@@ -311,7 +332,7 @@ body{
 
 <!--************************************************************    CARREFUR    ******************************************************** -->
 
-	<div id="carousel-HEADER" class="carousel slide" data-ride="carousel">
+	<div id="carousel-HEADER" class="carousel slide shadow" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-HEADER" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-HEADER" data-slide-to="1" class=""></li>
@@ -364,30 +385,24 @@ body{
 
 <!--************************************************************     CUERPO       *********************************************************** -->
 
-	<div style="background-image: linear-gradient(to bottom right,#202030,#102020); margin-bottom: 75px">
+	<div style="background-image: linear-gradient(to bottom right,#fff,#aaa); padding-bottom: 37.5px">
 	<div class="container">
 	<div class="row" >
-		<div  style="margin-top: 20px" class=" col-sm-2">
-			<div class="panel panel-default">
+		<div  style="margin-top: 20px" class=" col-sm-2" id="columna-genero">
+			<div class="panel panel-default " id="panel-genero" style="; background-image: linear-gradient(to bottom right,#fff,#efefef)">
 				<div class="panel-body">
 					<ul>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						<br>
-						<li>Genero</li>
-						
-						
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
+						<a><h4>Genero</h4></a>
 					</ul>
 				</div>
 			</div>
@@ -395,37 +410,37 @@ body{
 		</div>
 	<div class="col-sm-1"></div>
 	<div id="titulo" ><h2>OFERTAS SEMANALES</h2> </div>
-	<!--************************************************************     CARREFUR ROTO       *********************************************************** -->
+<!--************************************************************     CARREFUR ROTO       *********************************************************** -->
 		<div style="height:373px; width:80%; margin-left:22%; margin-top: 10px "  >
 
-		<div style="height:100%;width:25%;float:left;background-image:linear-gradient(to bottom right,#202530,#66d2ff);box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;  " >
-		<div style=" float:left;"><img class="img-responsive" src="imagen/Detroit.jpg" ><a href=""><h4  ><br><br>ME PICAN <br> LOS HUEVOS</h4></a> </div>
+		<div class="oscuro" style="height:100%;width:25%;float:left;background-image:linear-gradient(to bottom right,#222,#101010);box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;  " >
+			<div style=" float:left;"><img class="img-responsive" src="imagen/Detroit.jpg" ><a href=""><h2>PLACE <br> HOLDER</h2></a> </div>
 		</div>
 		<div style="height: 300px; width:70%;margin-left: 25%;">
 		<div id="carousel-body" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-body" data-slide-to="0" class=""></li>
-				<li data-target="#carousel-body" data-slide-to="1" class="active"></li>
-				<li data-target="#carousel-body" data-slide-to="2" class=""></li>
+			<ol class="carousel-indicators" style="padding-right: 10%">
+				<li data-target="#carousel-body" data-slide-to="0" class="shadow"></li>
+				<li data-target="#carousel-body" data-slide-to="1" class="active shadow"></li>
+				<li data-target="#carousel-body" data-slide-to="2" class="shadow"></li>
 			</ol>
-			<div class="carousel-inner">
+			<div class="carousel-inner" style="height: 350px">
 				<div class="item">
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
 
 					
 				
 				</div>
 				<div class="item">
-					<div style="width:30%;margin-left: 10px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 10px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
 				</div>
 				<div class="item active">
-					<div style="width:30%;margin-left: 10px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
-					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 10px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
+					<div style="width:30%;margin-left: 5px;margin-right:5px;float:left;"><img class="img-responsive shadow" src="imagen/Papwe.jpg" ></div>
 				</div>
 			</div>
 			
@@ -434,14 +449,13 @@ body{
 		</div>
 		</div>
 		</div>
-	<!--************************************************************     FIN CARREFUR ROTO       *********************************************************** -->
-	<div class="col-sm-2"></div>
+<!--************************************************************     FIN CARREFUR ROTO       *********************************************************** -->
+	<div class="col-sm-2" ></div>
 	</div>
 	</div>
 	</div>
-	<div style="margin-top: px" class="row">
-
-	<div class="col-sm-9">
+<div  class="row"style="margin-left: 0px;margin-right:0px;padding-top: 37.5px;background-image: linear-gradient(to top right,#fff,#aaa)">	
+	<div class="col-sm-9" style="margin-left: 3%">
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="col-sm-6"></div>
@@ -481,31 +495,20 @@ body{
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-1" ></div>
 
-	<div class="col-sm-3">
+	<div class="col-sm-2">
 		<div class="panel panel-default">
-			<div class="panel-body">
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
-				
-				<br>
-				<li>Ranking</li>
-				<br>
-				<li>Ranking</li>
+			<div class="panel-body" style="padding-left: 15%">
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
+				<a><h4>ranking</h4></a>
 			</div>
 		</div>
 	</div>
@@ -515,7 +518,7 @@ body{
 
 <!-- ***********************************************************	 FOOTER	    *********************************************************-->
 
-	<div id="footer">
+	<div class="oscuro" id="footer" style="background-color: black; padding-bottom: 100px">
 		<div class="container">
 			<hr class="hidden-xs">
 			<div class="row hidden-xs">
@@ -561,7 +564,6 @@ body{
 		</div>
 
 	</div>
-	<div style="height: 100px"></div>
 <!-- ***********************************************************   FON FOOTER	 *********************************************************-->
 
 

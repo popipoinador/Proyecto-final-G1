@@ -19,7 +19,7 @@ body{
 a{
 	color:#555;
 }
-.oscuro a{
+.oscuro {
 	color:#aaa;
 }
 .shadow{
@@ -274,6 +274,11 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	#panel-genero{
 		margin-top: 20px;
 	}
+	@media (min-width: 1200px) {
+  		.container {
+   		 width: 1240px;
+ 	}
+}
 
 
 /***************************************************************    FIN BODY        ************************************************************/
@@ -388,11 +393,13 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	<div style="background-image: linear-gradient(to bottom right,#fff,#aaa); padding-bottom: 37.5px">
 	<div class="container">
 	<div class="row" >
-		<div  style="margin-top: 20px" class=" col-sm-2" id="columna-genero">
-			<div class="panel panel-default " id="panel-genero" style="; background-image: linear-gradient(to bottom right,#fff,#efefef)">
+		<div  style="margin-top: 20px" class="oscuro col-sm-2" id="columna-genero">
+			<div class="panel panel-default shadow " id="panel-genero" style="border: 0px; background-image: linear-gradient(to bottom right,#222,#101010)">
 				<div class="panel-body">
+					<h4 style="margin:0px" >POR GENERO</h4>
+					<div style="height: 1px;width: 90%;background-color:#dddddd" ></div>
 					<ul>
-						<a><h4>Genero</h4></a>
+						
 						<a><h4>Genero</h4></a>
 						<a><h4>Genero</h4></a>
 						<a><h4>Genero</h4></a>
@@ -409,7 +416,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 			
 		</div>
 	<div class="col-sm-1"></div>
-	<div id="titulo" ><h2>OFERTAS SEMANALES</h2> </div>
+	<div id="titulo" ><h2>OFERTAS SEMANALES</h2><div class="shadow" style="height: 2px;width: 80%;background-color: black" ></div> </div>
 <!--************************************************************     CARREFUR ROTO       *********************************************************** -->
 		<div style="height:373px; width:80%; margin-left:22%; margin-top: 10px "  >
 
@@ -454,8 +461,10 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	</div>
 	</div>
 	</div>
-<div  class="row"style="margin-left: 0px;margin-right:0px;padding-top: 37.5px;background-image: linear-gradient(to top right,#fff,#aaa)">	
-	<div class="col-sm-9" style="margin-left: 3%">
+	<div style="background-image: linear-gradient(to top right,#fff,#aaa)">
+	<div class="container" >
+	<div  class="row"style="margin-left: 0px;margin-right:0px;padding-top: 37.5px;">	
+	<div class="col-sm-9" style="">
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="col-sm-6"></div>
@@ -498,7 +507,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 
 	<div class="col-sm-2">
 		<div class="panel panel-default">
-			<div class="panel-body" style="padding-left: 15%">
+			<div class=" panel-body" style="padding-left: 15%">
 				<a><h4>ranking</h4></a>
 				<a><h4>ranking</h4></a>
 				<a><h4>ranking</h4></a>
@@ -511,6 +520,8 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 				<a><h4>ranking</h4></a>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 	</div>
 	</div>

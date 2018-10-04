@@ -17,10 +17,14 @@ body{
 	background-image:linear-gradient(to bottom right,#fff,#aaa);
 }
 a{
-	color:#555;
+	color:#ccc;
+	font-family: arial;
+}
+a:hover{
+	color:#ffffff;
 }
 .oscuro {
-	color:#aaa;
+	color:#ccc;
 }
 .shadow{
 box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;	
@@ -242,6 +246,22 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	.panel{
 		border-radius: 0px;
 	}
+	.juego{
+		width: 100%;
+
+		background-image: linear-gradient(to bottom right,#222,#101010);
+		padding-bottom: 0px;
+	}
+	.juegoimg{
+		width: 200px;
+		height:87px;
+		float: left
+
+	}
+	.juegoimg img{
+		width: 200px;
+		height: 87px;
+	}
 
 	#carousel-body{
 
@@ -278,6 +298,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
   		.container {
    		 width: 1240px;
  	}
+
 }
 
 
@@ -294,7 +315,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 <body>
 <!--************************************************************     NAVBAR     ************************************************** -->
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
+		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -337,6 +358,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 
 <!--************************************************************    CARREFUR    ******************************************************** -->
 
+	
 	<div id="carousel-HEADER" class="carousel slide shadow" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-HEADER" data-slide-to="0" class="active"></li>
@@ -344,6 +366,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 			<li data-target="#carousel-HEADER" data-slide-to="2" class=""></li>
 			<li data-target="#carousel-HEADER" data-slide-to="3" class=""></li>
 		</ol>
+		<div class="container">
 		<div class="carousel-inner">
 			<div id="carrefur1" class="item active">
 				
@@ -381,9 +404,11 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 			</div>
 		</div>
 													 <!-- Fin Carousel -->
-
-		<a class="left carousel-control" href="#carousel-HEADER" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		<a class="right carousel-control" href="#carousel-HEADER" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		<div class="container">
+			<a class="left carousel-control" href="#carousel-HEADER" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#carousel-HEADER" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+	</div>
 	</div>
 <!--************************************************************  FIN CARREFUR   ****************************************************** -->
 
@@ -400,23 +425,23 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 					<div style="height: 1px;width: 90%;background-color:#dddddd" ></div>
 					<ul>
 						
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
-						<a><h4>Genero</h4></a>
+						<a><h4>Accion</h4></a>
+						<a><h4>Aventura</h4></a>
+						<a><h4>RPG</h4></a>
+						<a><h4>Plataformas</h4></a>
+						<a><h4>Shooter</h4></a>
+						<a><h4>Place holder</h4></a>
+						<a><h4>A</h4></a>
+						<a><h4>Nisman</h4></a>
+						<a><h4>Lo Mataron</h4></a>
+						<a><h4>Sorprendeme</h4></a>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 	<div class="col-sm-1"></div>
-	<div id="titulo" ><h2>OFERTAS SEMANALES</h2><div class="shadow" style="height: 2px;width: 80%;background-color: black" ></div> </div>
+	<div id="titulo" ><h2>DESCUBRE JUEGOS</h2><div class="shadow" style="height: 2px;width: 80%;background-color: black" ></div> </div>
 <!--************************************************************     CARREFUR ROTO       *********************************************************** -->
 		<div style="height:373px; width:80%; margin-left:22%; margin-top: 10px "  >
 
@@ -466,37 +491,43 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	<div  class="row"style="margin-left: 0px;margin-right:0px;padding-top: 37.5px;">	
 	<div class="col-sm-9" style="">
 		<div class="panel panel-default">
-			<div class="panel-body">
-				<div class="col-sm-6"></div>
-				<div class="col-sm-6">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+			<div style="background-image: linear-gradient(to top right,#ffffff,#f0f0f0)" class="panel-body">
+
+				<div  class="col-sm-12">
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/apps/742300/capsule_184x69.jpg?t=1538553783" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>OTRO MEGAMAN</h5></a>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/apps/750920/capsule_184x69.jpg?t=1537373724" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>OTRO TOMB RAIDER</h5></a>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/apps/736190/capsule_184x69.jpg?t=1538432242" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>LA INCLUSION SOCIAL</h5></a>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/spotlights/d0a4900e99c0c084e561a663/spotlight_image_english.png?t=1538498190" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>WAIFUS</h5></a>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/apps/929180/capsule_184x69.jpg?t=1538424088" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>MAS WAIFUS</h5></a>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-body">
-							Juego Random
+					<div class="juegoimg"><img src="https://steamcdn-a.akamaihd.net/steam/apps/742300/capsule_184x69.jpg?t=1538553783" alt=""> </div>
+					<div class="panel panel-default juego oscuro">
+						<div style="padding: 0px 15px" class="panel-body ">
+							<a href=""><h5>MAS MEGAMAN</h5></a>
 						</div>
 					</div>
 				</div>

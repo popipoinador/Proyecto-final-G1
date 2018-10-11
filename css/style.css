@@ -24,6 +24,7 @@ h5{
 	
 }
 #titulo h2{
+
 	
 }
 .box{
@@ -47,7 +48,10 @@ h5{
 	height: 1px;
 	background-color: black;
 }
-
+/******************  CARREFUR ROTO  ***********************/
+.carousel-inner > .item{
+	transition: 1.5s;
+}
 
 /******************  INICIO CARREFUR  ************************************************************/
 	.carousel-control {
@@ -102,7 +106,7 @@ h5{
     width: 130px;
     height: 7px;
     margin: 7px;
-    background-color: #23527c;
+    background-color: #212121;
     transition: background-color 250ms;
 	}
 
@@ -301,8 +305,8 @@ h5{
 	}
 	.juegoimg{
 		width: 200px;
-		height:87px;
-		float: left
+		height: 87px;
+		float: left;
 
 	}
 	.juegoimg img{
@@ -337,9 +341,11 @@ h5{
 	}
 	#columna-genero{
 		width: 20%;
+
 	}
 	#panel-genero{
 		margin-top: 20px;
+		height: 400px;
 	}
 	@media (min-width: 1200px) {
   		.container {

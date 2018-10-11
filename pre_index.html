@@ -30,6 +30,9 @@ a:hover{
 .shadow{
 box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;	
 }
+.glass{
+	background-color: rgba(200,200,200,0.8);
+}
 #titulo h2{
 	
 }
@@ -207,8 +210,8 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	.navbar-default .navbar-nav > .open > a,
 	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus {
-	  color: #79787a;
-	  background-color: #c6c5c7;
+		color:#fff;
+		background-color: rgba(50,50,50,0.5);
 	}
 	.navbar-default .navbar-toggle {
 	  border-color: #c6c5c7;
@@ -249,6 +252,24 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 
 
 	  }
+	}
+	.navbar-login{
+    	width: 305px;
+    	padding: 10px;
+    	padding-bottom: 0px;
+	}
+
+	.navbar-login-session{
+   	 	padding: 10px;
+    	padding-bottom: 0px;
+    	padding-top: 0px;
+	}
+
+	.icon-size{
+    	font-size: 87px;
+	}
+	.open a:focus{
+
 	}
 /****************   FIN NAVBAR     ************************************************************/
 
@@ -333,22 +354,8 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 	#chat-container{
 		margin-bottom: 10px;
 	}
-	.navbar-login{
-    	width: 305px;
-    	padding: 10px;
-    	padding-bottom: 0px;
-	}
-
-	.navbar-login-session{
-   	 	padding: 10px;
-    	padding-bottom: 0px;
-    	padding-top: 0px;
-	}
-
-	.icon-size{
-    	font-size: 87px;
-	}
-					}
+	
+	
 
 /******************    FIN BODY        ************************************************************/
 
@@ -392,7 +399,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
                         <strong>Juancito114</strong>
                         <span class="glyphicon glyphicon-chevron-down"></span>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu glass">
                         <li>
                             <div class="navbar-login">                            	
 

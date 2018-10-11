@@ -108,8 +108,13 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 		padding: 8px 20px;
 		font-size: 18px;
 		float:left;
-		background-color: #23527c;
-		border-color: #000
+		background-image: linear-gradient(to bottom right,#222,#101010);
+		border-color: #ccc;
+		color:#ccc;
+	}
+	.btn:hover{
+		border-color: #fff;
+
 	}
 		
 	.btn-lg {
@@ -307,6 +312,12 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 		background-image: linear-gradient(to bottom right,#222,#101010);
 		max-height: 670px;
 		padding:12px;
+	}
+	#chat button{
+		padding: 3px;
+		margin:0px;
+		font-size: 9px;
+		border-radius: 0px;
 	}
 	#chat-panel{
 		height: 570px;
@@ -552,7 +563,7 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 			<!-- *************************************************chat -->
 				<div id="chat" class="col-sm-3">
 					<div id="chat-container" class="panel panel-default">
-						<div id="chat-panel" class=" panel-body" style="padding-left: 15%">
+						<div id="chat-panel" class=" panel-body" style="padding-left: 15%; overflow: scroll">
 							
 							
 						</div>
@@ -620,13 +631,16 @@ box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;
 
 	<script>
 		var contador=1;
+		var nombre=["marcos","jorgo","jevus","nadabuko","nodo","nosor"]
 		function eliminar(id){
 			$("#"+id).hide();
 		}
 		function comentar(e){
+			var selector=0;
+			selector=Math.floor(Math.random()*6);
 			if(e.keyCode==13){
 				var comentario = $("#input-chat").val();
-				$("#chat-panel").append('<div style="margin-bottom:20px;" id="comentario_'+contador+'"> <b>jevus: </b>'+comentario+' <button type="button" onclick="eliminar(\'comentario_'+contador+'\')" style="padding:4px" class="btn btn-xs pull-right">X</button><div>');
+				$("#chat-panel").append('<div style="margin-bottom:20px;" id="comentario_'+contador+'"> <b>'+nombre[selector]+': </b>'+comentario+' <button type="button" onclick="eliminar(\'comentario_'+contador+'\')" style="padding:4px" class="btn btn-xs pull-right">X</button><div>');
 				$("#input-chat").val("");
 				contador++;	
 			}

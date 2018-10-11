@@ -59,6 +59,7 @@ h5{
 }
 
 
+
 /******************  INICIO CARREFUR  ************************************************************/
 	.carousel-control {
 		width: 7%;		
@@ -393,6 +394,9 @@ h5{
 	}
 	#chat-container{
 		margin-bottom: 10px;
+	}
+	.amigos h5{
+		margin-bottom: 5px;
 	}
 	
 

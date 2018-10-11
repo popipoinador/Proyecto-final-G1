@@ -14,7 +14,17 @@ h5{
 	text-transform: uppercase;
 }
 .oscuro {
-	color:#ccc;
+	color:#eee;
+
+}
+.claro	{
+	color: #555;
+}
+.claro a{
+	color: #777;
+}
+.claro a:hover{
+	color: #222;
 }
 .shadow{
 	box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;	
@@ -344,7 +354,22 @@ h5{
 	@media (min-width: 1200px) {
   		.container {
    		 width: 1240px;
- 	}
+ 		}
+	}
+	
+	.amigos {
+		height: 100px; 
+		padding: 5px;
+		overflow: hidden;
+
+	}
+	.amigos img{
+		height: 90px;
+		width: 90px;
+		float: left;
+		margin-right: 10px;
+	}
+	.detalles-usuario{
 
 	}
 	/***********************chat*************************************/
@@ -370,6 +395,7 @@ h5{
 		margin-bottom: 10px;
 	}
 	
+
 	
 
 /******************    FIN BODY        ************************************************************/

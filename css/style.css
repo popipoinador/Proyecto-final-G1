@@ -1,4 +1,378 @@
-body {
-	
+body{
+
+background-image: linear-gradient(to bottom right,#222,#101010);
+height:
+}
+a{
+	color:#ccc;
+	font-family: arial;
+}
+a:hover{
+	color:#ffffff;
+}
+h5{
+	text-transform: uppercase;
+}
+.oscuro {
+	color:#ccc;
+}
+.shadow{
+	box-shadow: 2px 2px 5px #202030,-2px -2px 5px #202030;	
+}
+.glass{
+	background-color: rgba(10,10,10,0.5);
 	
 }
+#titulo h2{
+	
+}
+.box{
+	padding: 5px;
+	border-radius: 0px;
+	min-height: 100px
+
+}
+.container{
+	min-width: 940px;
+}
+.foscuro{
+	background-image: linear-gradient(to bottom right,#222,#101010);
+}
+.fclaro{
+	background-image: linear-gradient(to bottom right,#dddddd,#c5c5c5);
+}
+.line{
+	width: 80%;
+	margin: 5px 3px; 
+	height: 1px;
+	background-color: black;
+}
+
+
+/******************  INICIO CARREFUR  ************************************************************/
+	.carousel-control {
+		width: 7%;		
+	}
+	
+	.carousel-caption {
+		left: 9%;
+		bottom: 100px;
+	}
+
+	.titulo-carousel {
+
+		/*Animacion que todavia no andaaaaaaafmasjfnasldjfnalsfd*/
+		animation-name: Home-carouselSlideRightFadeIn;
+		transform: translateX(0);
+		animation-duration: 500ms;
+		animation-fill-mode: backwards;
+		animation-timing-function: ease-out;
+
+		/*Titulo configuracion*/
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		backface-visibility: hidden;
+		font-size: 47px;
+		animation-delay: 700ms;
+		font-family: : "Blizzard", Helvetica, Arial, sans-serif;
+		text-shadow: 4px 6.93px 17px rgba(0,0,0,.30);
+		left: 7%;
+		padding-bottom: 50px;
+	}
+
+
+	/*botonoes de abajo de las lineas*/
+
+	.carousel-indicators li {
+    display: inline-block;
+    width: 130px;
+    height: 7px;
+    margin: 7px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+
+	}
+	.carousel-indicators .active {
+    width: 130px;
+    height: 7px;
+    margin: 7px;
+    background-color: #23527c;
+    transition: background-color 250ms;
+	}
+
+	/*.carousel-caption h1{
+
+	}*/
+
+	#carousel-HEADER {
+			
+		height: 600px; 
+		width: 100%;
+
+			
+
+	}
+	.btn{
+		padding: 8px 20px;
+		font-size: 18px;
+		float:left;
+		background-image: linear-gradient(to bottom right,#222,#101010);
+		border-color: #ccc;
+		color:#ccc;
+		border-radius: 0px;
+	}
+	.btn:hover{
+		border-color: #fff;
+
+	}
+		
+	.btn-lg {
+		border-radius: 0px;
+		z-index: 1;
+
+	}
+				/* Configuracion de las imagenes*/
+
+	#carousel-HEADER .item{
+	width: 100%;
+	height: 600px;
+	background-repeat: no-repeat;
+   
+	}
+	#carrefur1{
+		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg");
+		background-position: 50% 20%;
+		background-size: 2500px 800px;
+	}
+	#carrefur2{
+		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg");
+		background-position: 63% 20%;
+		background-size: 2500px 800px;
+	}
+	#carrefur3{
+		background-image: url("https://cdn.mos.cms.futurecdn.net/wNsGQb6WED35mfBUnV9qwm.jpg");
+		background-position: 50% 20%;
+		background-size: 1920px 1080px;
+	}
+
+	#carrefur4{
+		background-image: url("https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759");
+		background-position: 50% 20%;
+		background-size: 1920px 1080px;
+	}
+	.carousel-indicators{
+		z-index: 2;
+		margin-bottom: 0px;
+		width: 100%;
+		margin-left: 0%;
+		left: 0%;
+	}
+	#carousel-HEADER .carousel-indicators .active{
+		width: 20%;
+	}
+	#carousel-HEADER .carousel-indicators li{
+		width: 17%;
+	}
+
+
+/******************  FIN CARREFUR      ***********************************************************/
+
+/*****************     NAVBAR      **************************************************************/
+
+	.navbar-default{
+		z-index: 2;
+		position: absolute;
+		width: 100%;
+		border-radius: 0px;
+						
+		}
+	.navbar-default {
+		background-color: rgba(50,50,50,0.5);
+		border-color: rgba(50,50,50,0.3);
+	}
+	.navbar-default .navbar-brand {
+	  color: #aaa;
+	}
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
+	  color: #fff;
+	}
+	.navbar-default .navbar-text {
+	  color: #aaa;
+	}
+	.navbar-default .navbar-nav > li > a {
+	  color: #aaa;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+	  color: #fff;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+	  color: #fff;
+	  background-color: #c6c5c7;
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+		color:#fff;
+		background-color: rgba(50,50,50,0.5);
+	}
+	.navbar-default .navbar-toggle {
+	  border-color: #c6c5c7;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	  background-color: #c6c5c7;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #343434;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+	  border-color: #343434;
+	}
+	.navbar-default .navbar-link {
+	  color: #343434;
+	}
+	.navbar-default .navbar-link:hover {
+	  color: #79787a;
+	}
+
+	@media (max-width: 767px) {
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #343434;
+
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	    color: #79787a;
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	    color: #79787a;
+	    background-color: #c6c5c7;
+
+
+
+	  }
+	}
+	.navbar-login{
+    	width: 305px;
+    	padding: 10px;
+    	padding-bottom: 0px;
+	}
+
+	.navbar-login-session{
+   	 	padding: 10px;
+    	padding-bottom: 0px;
+    	padding-top: 0px;
+	}
+
+	.icon-size{
+    	font-size: 87px;
+	}
+	.open a:focus{
+
+	}
+	.overhidden{
+		overflow: hidden;
+	}
+/****************   FIN NAVBAR     ************************************************************/
+
+/***************** FIN MENU PRINCIPAL **********************************************************/
+/****************      BODY        ************************************************************/
+	.panel{
+		border-radius: 0px;
+	}
+	.juego{
+		width: 100%;
+
+		background-image: linear-gradient(to bottom right,#222,#101010);
+		padding-bottom: 0px;
+	}
+	.juegoimg{
+		width: 200px;
+		height:87px;
+		float: left
+
+	}
+	.juegoimg img{
+		width: 200px;
+		height: 87px;
+	}
+
+	#carousel-body{
+
+	}
+	#carousel-body .carousel-inner{
+		width: 94%;
+		height: 300px;
+	}
+	#carousel-body .right{
+		height: 30%;
+		width:7% ;
+		margin-top:20%;
+	}
+	#carousel-body .carousel-indicators{
+		margin-bottom: 0px;
+		
+	}
+	#titulo{
+		z-index: 1;
+		margin-left: 22%;
+	}
+	#titulo h2{
+		margin-bottom: 0px;
+		margin-top:10px;
+		color:#555;	
+	}
+	#columna-genero{
+		width: 20%;
+	}
+	#panel-genero{
+		margin-top: 20px;
+	}
+	@media (min-width: 1200px) {
+  		.container {
+   		 width: 1240px;
+ 	}
+
+	}
+	/***********************chat*************************************/
+	#chat{
+		background-image: linear-gradient(to bottom right,#222,#101010);
+		max-height: 670px;
+		padding:12px;
+	}
+	#chat button{
+		padding: 3px;
+		margin:0px;
+		font-size: 9px;
+		border-radius: 0px;
+	}
+	#chat-panel{
+		height: 570px;
+	}
+	#input-chat{
+		height:50px;
+		border-radius: 0px;
+	}
+	#chat-container{
+		margin-bottom: 10px;
+	}
+	
+	
+
+/******************    FIN BODY        ************************************************************/
+
+
+

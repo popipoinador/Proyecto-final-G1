@@ -52,11 +52,13 @@ h5{
 .hoscuro:hover{
 	background-image: linear-gradient(to bottom right,#444,#101010);
 }
+.oscurohover{
+	background-image: linear-gradient(to bottom right,#444,#101010);
+}
 .fclaro{
 	background-image: linear-gradient(to bottom right,#dddddd,#c5c5c5);
 }
 .hclaro:hover{
-
 	background-image: linear-gradient(to bottom right,#aaaaaa,#c5c5c5);
 }
 .line{
@@ -373,8 +375,8 @@ h5{
 		height: 100px; 
 		padding: 5px;
 		overflow: hidden;
-
 	}
+	
 	.drop-amigo:hover .amigo-toggle{
 		display: block;
 		transition: display 1s;

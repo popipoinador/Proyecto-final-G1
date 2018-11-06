@@ -164,32 +164,48 @@ h5{
 				/* Configuracion de las imagenes*/
 
 	#carousel-HEADER .item{
-	width: 100%;
-	height: 600px;
-	background-repeat: no-repeat;
-   
+		width: 100%;
+		height: 600px;
+		animation-name: textMove;
+		animation-duration: 3s;
+		background-repeat: no-repeat;
+	 	background-size: cover;  	
+	 	background-position: center;
 	}
 	#carrefur1{
 		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg");
 		background-position: 50% 20%;
-		background-size: 2500px 800px;
 	}
 	#carrefur2{
 		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg");
 		background-position: 63% 20%;
-		background-size: 2500px 800px;
 	}
 	#carrefur3{
 		background-image: url("https://cdn.mos.cms.futurecdn.net/wNsGQb6WED35mfBUnV9qwm.jpg");
 		background-position: 50% 20%;
-		background-size: 1920px 1080px;
 	}
 
 	#carrefur4{
 		background-image: url("https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759");
 		background-position: 50% 20%;
-		background-size: 1920px 1080px;
 	}
+
+	#carousel-HEADER .item .carousel-caption{
+		animation-name: textMove;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+	}
+
+	@keyframes textMove {
+	    0%{margin-left: 20px; opacity: 0}
+	    50%{opacity: 1}
+	    100%{margin-left: 0px;}
+	}
+
+	#carousel-HEADER .item.active .carousel-caption{
+		margin-right: 20px;
+	}
+
 	.carousel-indicators{
 		z-index: 2;
 		margin-bottom: 0px;

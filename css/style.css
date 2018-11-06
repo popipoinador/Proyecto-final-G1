@@ -174,25 +174,21 @@ h5{
 	}
 	#carrefur1{
 		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pt/PTRQ0098SJYL1509731760219.jpg");
-		background-position: 50% 20%;
 	}
 	#carrefur2{
 		background-image: url("https://bnetcmsus-a.akamaihd.net/cms/gallery/pk/PKFLFRA89VUR1509662979573.jpg");
-		background-position: 63% 20%;
 	}
 	#carrefur3{
 		background-image: url("https://cdn.mos.cms.futurecdn.net/wNsGQb6WED35mfBUnV9qwm.jpg");
-		background-position: 50% 20%;
 	}
 
 	#carrefur4{
 		background-image: url("https://vignette.wikia.nocookie.net/warframe/images/1/16/The_Sacrifice.png/revision/latest?cb=20180615013759");
-		background-position: 50% 20%;
 	}
 
 	#carousel-HEADER .item .carousel-caption{
 		animation-name: textMove;
-		animation-duration: 5s;
+		animation-duration: 3.5s;
 		animation-timing-function: ease-in-out;
 	}
 
@@ -218,7 +214,28 @@ h5{
 	}
 	#carousel-HEADER .carousel-indicators li{
 		width: 17%;
+		position: relative;
 	}
+
+	#carousel-HEADER .carousel-indicators li.active:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, red, yellow, green, blue);
+		z-index: 2;
+		animation-name: relleno;
+		animation-duration: 4.3s;
+		animation-timing-function: linear;
+	 }
+
+	 @keyframes relleno{
+	 	0%{width: 0%;}
+	 	100%{width: 100%;}
+	 }
+
 
 
 /******************  FIN CARREFUR      ***********************************************************/

@@ -210,7 +210,7 @@ h5{
 		left: 0%;
 	}
 	#carousel-HEADER .carousel-indicators .active{
-		width: 20%;
+		width: 17%;
 	}
 	#carousel-HEADER .carousel-indicators li{
 		width: 17%;
@@ -224,10 +224,10 @@ h5{
 		top: 0px;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to top, red, yellow, green, blue);
+		background-color: #666;
 		z-index: 2;
 		animation-name: relleno;
-		animation-duration: 4.3s;
+		animation-duration: 4.8s;
 		animation-timing-function: linear;
 	 }
 
